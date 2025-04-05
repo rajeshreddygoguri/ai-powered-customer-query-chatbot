@@ -13,7 +13,7 @@ export default function Home() {
         navigate('/admin')
   }
   const gotoChatbot=()=>{ 
-    window.location.href = "http://localhost:5174";
+    window.location.href = "https://chatbot-nc4p.onrender.com";
 
 }
   const handleLogout=async()=>{

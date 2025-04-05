@@ -16,15 +16,11 @@ export default function Home() {
     window.location.href = "https://chatbot-nc4p.onrender.com";
 
 }
-  const deleteCookie = (name) => {
-  document.cookie = ${name}=; Max-Age=0; path=/; domain=${window.location.hostname};
-};
   const handleLogout=async()=>{
     try {
       const request= await post('/api/auth/logout')
        const resspone= request.data
        if (request.status==200) {
-         deleteCookie('token');
            dispatch(Logout())
           navigate('/login')
        }

@@ -56,7 +56,11 @@ const Login=async(req,res)=>{
 }
   const Logout=async(req,res)=>{
     try {
-        res.clearCookie('token')
+        res.clearCookie('token',{
+                    httpOnly: true,
+                    secure: true,
+                    sameSite: 'None',
+                })
         res.status(200).json({message:"user Logout successfully"})
     } catch (error) {
         res.status(500).json({success:false,message:"internal server error"})

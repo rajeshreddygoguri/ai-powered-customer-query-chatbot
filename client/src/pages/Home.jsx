@@ -22,7 +22,7 @@ export default function Home() {
        const resspone= request.data
        if (request.status==200) {
            dispatch(Logout())
-          navigate('/login')
+          navigate('/login',{replace:true})
        }
     } catch (error) {
       console.log(error)

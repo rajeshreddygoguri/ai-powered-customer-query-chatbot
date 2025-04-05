@@ -45,7 +45,7 @@ const Login=async(req,res)=>{
                     httpOnly: true,
                     secure: true,
                     maxAge: 3600000,
-                    SameSite: 'None',
+                    sameSite: 'None',
                 })
               res.status(200).json({success:true,message:"Login successfully",user,token})
 

@@ -1,0 +1,8 @@
+{
+    "scripts": {
+  "dev": " npx kill-port 5173 5174 4000 5000 && concurrently  \"npm run dev --prefix client\" \"npm run dev --prefix backend\" \"npm run dev --prefix chatbot-reactjs\""
+},
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}

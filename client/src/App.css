@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#F4F0FF, #DACDFF);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Common Container Styles */
+.login-container, .register-container, .admin-container, .home-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin-container {
+  max-width: 900px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6D4FC2;
+}
+
+/* Input Styles */
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #6D4FC2;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid #CCCCE5;
+  font-size: 18px;
+  background: #F6F2FF;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #6D4FC2;
+  box-shadow: 0 0 10px rgba(109, 79, 194, 0.3);
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6D4FC2;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #593bab;
+}
+
+/* Link Styles */
+.register-link, .login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #6D4FC2;
+}
+
+.register-link a, .login-link a {
+  color: #6D4FC2;
+  text-decoration: none;
+}
+
+.register-link a:hover, .login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Admin Panel Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+th {
+  background-color: #F6F2FF;
+}
+
+/* Delete Button */
+.admin-container button {
+  background-color: #dc3545;
+}
+
+.admin-container button:hover {
+  background-color: #c82333;
+}
+
+/* Home Page Cards */
+.user-card, .guest-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+.user-card h2, .guest-card h2 {
+  color: #6D4FC2;
+  margin-bottom: 20px;
+}
+
+/* Logout and Admin Buttons */
+.logout-btn, .admin-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #6D4FC2;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover, .admin-btn:hover {
+  background-color: #593bab;
+}
+
+.user-card .logout-btn {
+  background-color: #dc3545;
+}
+
+.user-card .logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 520px) {
+  .login-container, .register-container, .admin-container, .home-container {
+    width: 90%;
+  }
+}
+.back-btn {
+  position: absolute;
+  top: 10px;  
+  right: 20px; 
+  padding: 10px 18px; 
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  min-width: 120px;
+}
+
+.back-btn:hover {
+  background-color: #c82333;
+}

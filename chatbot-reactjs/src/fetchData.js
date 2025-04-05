@@ -1,6 +1,6 @@
 export async function fetchCompanyInfo() {
     try {
-      const response = await fetch("http://localhost:5000/api/company-info");
+      const response = await fetch("https://chatbot-backend-1rid.onrender.com/api/company-info");
       const data = await response.json();
       return data.message;
     } catch (error) {

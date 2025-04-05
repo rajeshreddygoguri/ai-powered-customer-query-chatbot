@@ -22,7 +22,7 @@ export default function Home() {
        const resspone= request.data
        if (request.status==200) {
            dispatch(Logout())
-          navigate('/login')
+          navigate('https://client-pdhx.onrender.com')
        }
     } catch (error) {
       console.log(error)
